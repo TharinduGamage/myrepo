@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portofolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="ticon.png" type="png">
+    
+</head>
+<body>
+    <nav>
+        <img src="ticon.png" width="40px" height="50px">
+        <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="projects.html"><li>Projects</li></a>
+        <a href="resume.html"><li>Resume</li></a>
+        </ul>
+    </nav>
+    <div id="ball"></div>
+<section id="sec">
+    <div id="welcome" class="text">
+    <p class="title" id="wel">Welcome to my Portofolio!</p>
+    <div id="shape"></div>
+    <p class="data">Hi, I'm Tharindu, a passionate web developer who loves creating clean, user
+        friendly websites. Welcome to my personal Portofolio where i showcase my sills and projects.
+    </p>
+    </div><div class="middle"></div>
+
+    <div id="about" class="text">
+        <p class="title">About Me</p>
+        <p class="data">I’m a web developer with experience in HTML, CSS, and JavaScript. I love turning ideas into functional and visually appealing websites.
+             My goal is to grow as a developer, taking on new challenges and expanding my skills.
+            You can check out my projects below, or contact me if you'd like to collaborate!</p>
+    </div>
+    <div class="middle"></div>
+    <div id="projects" class="text">
+        <p class="title">My Projects</p>
+        <button id="download">Download Resume</button>
+        <ul id="imgs">
+            <li><input type="checkbox" id="p1" class="click">
+                <label for="p1" class="click2" id="cid1" ><img src="pro5.png" style="border-radius: 0.6rem;"> </label></li>
+            <li><input type="checkbox" id="p2" class="click">
+                <label for="p2" class="click2" id="cid2" ><img src="pro6.png" style="border-radius: 0.6rem;"></label></li>
+            <li><input type="checkbox" id="p3" class="click">
+                <label for="p3" class="click2" id="cid3" ><img src="pro2.png" style="border-radius: 0.6rem;"></label></li>
+            <li><input type="checkbox" id="p4" class="click">
+                <label for="p4" class="click2" id="cid4" ><img src="pro1.png" style="border-radius: 0.6rem;"></label></li>
+        </ul>
+        <div id="bottomball"></div>
+        <div id="squarebottom"></div>
+    </div>
+</section>
+
+<script>
+    document.getElementById("download").addEventListener("click",function(){
+        const link = document.createElement("a");
+        link.href="https://drive.google.com/file/d/1VWgMPo7m9TkyWLMN5JesNA--PUbTrMU6/view?usp=drive_link";
+        link.click();
+    });
+</script>
+</body>
+</html>
